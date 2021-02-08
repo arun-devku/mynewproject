@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+   
+    <link rel="stylesheet" href="{% static 'fb.css' %}" type="text/css">
+</head>
+<body>
+    <div class="wrapper"> 
+        <div class="wrapper-left">
+            <img src="fb1.svg" alt="">
+            <p class="p">FacebookFacebook helps you connect and share with the people in your life</p>
+
+        </div>
+        <div class="wrapper-right">
+            <form class="form" action="">
+                <input class="email" type="text" placeholder="email id or phone number"> <br>
+                <input class="password" type="text" placeholder="password">
+                <button class="button">log in</button>
+                <a id="link" href="#">forgotten password?</a> <br>
+                <button class="button2">create new account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
