@@ -5,5 +5,6 @@ from newapp import views
 urlpatterns = [
     path('', views.home,name='home'),
     path('arundev/', views.arundev,name='arundev'),
+    path('firstassgnmnt/', views.firstassgnmnt,name='firstassgnmnt')
     ]
  
