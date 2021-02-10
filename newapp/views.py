@@ -10,7 +10,9 @@ def arundev(request):
 def firstassgnmnt(request):
     return render (request, 'firstassgnmt.html')  
 def assgnmnt2(request):
-    return render(request, 'assgnmnt2.html')       
+    return render(request, 'assgnmnt2.html')   
+def assgnmnt3(request):
+    return render (request, 'assgnmnt3.html')        
 
 
  
