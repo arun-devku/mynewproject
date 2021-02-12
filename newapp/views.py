@@ -12,7 +12,9 @@ def firstassgnmnt(request):
 def assgnmnt2(request):
     return render(request, 'assgnmnt2.html')   
 def assgnmnt3(request):
-    return render (request, 'assgnmnt3.html')        
+    return render (request, 'assgnmnt3.html') 
+def bootstrap(request):
+    return render(request, 'bootstrap.html')           
 
 
  

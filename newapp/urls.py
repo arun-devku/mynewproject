@@ -7,6 +7,7 @@ urlpatterns = [
     path('arundev/', views.arundev,name='arundev'),
     path('firstassgnmnt/', views.firstassgnmnt,name='firstassgnmnt'),
     path('assgnmnt2/', views.assgnmnt2,name='assgnmnt2'),
-    path('assgnmnt3/', views.assgnmnt3,name='assgnmnt3')
+    path('assgnmnt3/', views.assgnmnt3,name='assgnmnt3'),
+    path('bootstrap/', views.bootstrap,name='bootstrap')
     ]
  
