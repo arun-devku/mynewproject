@@ -28,6 +28,15 @@ def assgnmnt8(request):
 def assgnmnt9(request):
     return render (request, 'table2.html') 
 def assgnmnt10(request):
-    return render (request, 'table3.html')     
+    return render (request, 'table3.html')
+def assgnmnt11(request):
+    return render (request, 'assgnmntcss1.html') 
+def assgnmnt12(request):
+    return render (request, 'assgnmntcss2.html') 
+def assgnmnt13(request):
+    return render (request, 'css3.html') 
+def assgnmnt14(request):
+    return render (request, 'css4.html')     
+
 
  
