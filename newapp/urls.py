@@ -15,5 +15,6 @@ urlpatterns = [
     path('assgnmnt7/', views.assgnmnt7,name='assgnmnt7'),
     path('assgnmnt8/', views.assgnmnt8,name='assgnmnt8'),
     path('assgnmnt9/', views.assgnmnt9,name='assgnmnt9'),
+    path('assgnmnt10/', views.assgnmnt10,name='assgnmnt10'),
     ]
  

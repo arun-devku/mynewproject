@@ -27,5 +27,7 @@ def assgnmnt8(request):
     return render (request, 'assgnmnttable.html')     
 def assgnmnt9(request):
     return render (request, 'table2.html') 
+def assgnmnt10(request):
+    return render (request, 'table3.html')     
 
  
