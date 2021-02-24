@@ -36,7 +36,9 @@ def assgnmnt12(request):
 def assgnmnt13(request):
     return render (request, 'css3.html') 
 def assgnmnt14(request):
-    return render (request, 'css4.html')     
+    return render (request, 'css4.html')    
+def assgnmnt15(request):
+    return render (request, 'fbbootsrap.html')       
 
 
  
