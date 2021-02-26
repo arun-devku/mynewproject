@@ -20,11 +20,11 @@
     align-items: center;
     margin-top: 50px;
       background-color: #43689d;
-      /* border:   #43689d; */
+    
       color: #fff;
       cursor: pointer;
       height: 28%;
-      line-height: 0%;"
+      line-height: 0%;
 }
 
 .btn:hover{
@@ -90,7 +90,9 @@
    
   
    .fbname{
-       width: 25%;
+       width: 60%;
+       margin: 0 auto;
+       display: block;
    }
 
    .main12{
@@ -108,6 +110,10 @@
    #btn1{
 
     height: 50px;
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
    }
 
    .my-control{
@@ -115,35 +121,38 @@
     }
 
   .create-accnt1{
-
     width: 60%;
     height: 50px;
-    margin-top: 25px;
+    margin-top: 8px;
     
-    margin-left: 60px;
-    background-color: #43689d ;color: #fff;
+    margin: 0 auto;
+    display: block;
+    background-color: #48be4e ;color: #fff;
+    border-radius: 6px;
 
-    
-  
-   }
+     }
 
- .fbname{
-    margin-left: 50px;
-    width: 60%;
-
-   }
-
-
-   .btn{
-
-    width: 80%;
-    margin-left: 30px;
-
-
-
-   }
+ 
 
    
+
+
+   /* .btn{ */
+
+   
+
+
+
+   
+
+   .col-12{
+       line-height: 3;
+   }
+   
+   #forgtn{
+       
+       text-align: center;
+   }
 
 }
 
