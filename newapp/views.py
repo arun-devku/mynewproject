@@ -38,7 +38,9 @@ def assgnmnt13(request):
 def assgnmnt14(request):
     return render (request, 'css4.html')    
 def assgnmnt15(request):
-    return render (request, 'fbbootsrap.html')       
+    return render (request, 'fbbootsrap.html')
+def mypro(request):
+    return render (request, 'myproject.html')            
 
 
  

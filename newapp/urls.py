@@ -20,6 +20,7 @@ urlpatterns = [
     path('assgnmnt12/', views.assgnmnt12,name='assgnmnt12'),
     path('assgnmnt13/', views.assgnmnt13,name='assgnmnt13'), 
     path('assgnmnt14/', views.assgnmnt14,name='assgnmnt14'),
-     path('assgnmnt15/', views.assgnmnt15,name='assgnmnt15'),  
+    path('assgnmnt15/', views.assgnmnt15,name='assgnmnt15'),
+    path('mypro/', views.mypro,name='mypro'),  
     ]
  
