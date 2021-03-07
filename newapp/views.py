@@ -41,6 +41,7 @@ def assgnmnt15(request):
     return render (request, 'fbbootsrap.html')
 def mypro(request):
     return render (request, 'myproject.html')            
-
+def mypro2(request):
+    return render (request, 'myproject2.html')   
 
  

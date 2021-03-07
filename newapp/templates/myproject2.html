@@ -1,0 +1,81 @@
+{% extends 'projectbase.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+
+
+<div class="container-fluid col-md-10 radio_button">
+    <div class="row">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">BOOK TRAIN TICKETS</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">CHECK PNR STATUS</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">LIVE TRAIN STATUS</label>
+          </div>
+
+    </div>
+    <div  class="container-fluid col-md-12 main-content">
+        <div class="row">
+            <div class="col-md-3" style="border: 1px solid black ;" >
+                <p >from</p>
+                
+                <select style="border: none; font-size: 40px; font-weight: bold;" >
+                    
+                   <option >BANGLUR</option>
+                       <option value="1">COIMBATHUR</option>
+                           <option value="2">CALICUT</option>
+                           <option value="3">DELHI</option>
+                   </select>
+                
+            </div>
+            <div class="col-md-3" style="border: 1px solid black ;" >
+                <p>to</p>
+                <select style="border: none; font-size: 40px; font-weight: bold;" >
+                    
+                    <option >MUMBAI</option>
+                        <option value="1">COIMBATHUR</option>
+                            <option value="2">CALICUT</option>
+                            <option value="3">DELHI</option>
+                    </select>
+                
+            </div>
+            <div class="col-md-3"  style="border: 1px solid black ;">
+                <p>Traveldate</p>
+                <input type="date">
+            </div>
+            <div class="col-md-3"  style="border: 1px solid black ;">
+                <p>class</p>
+                
+                <select style="border: none; font-size: 12px; font-weight: bold;" >
+                    
+                    <option >first AC</option>
+                        <option value="1">second AC</option>
+                            <option value="2">Third AC</option>
+                            <option value="3">sleeper class</option>
+                    </select>
+            </div>
+        </div>
+      
+    </div>
+    
+
+
+  
+
+</div>
+ <div class="container-fluid col-md-4">
+      <button class="btn-success btn-block" style="margin-top: 190px;">SEARCH</button>
+ </div>
+
+{% endblock %}
+
