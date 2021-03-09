@@ -42,6 +42,11 @@ def assgnmnt15(request):
 def mypro(request):
     return render (request, 'myproject.html')            
 def mypro2(request):
-    return render (request, 'myproject2.html')   
+    return render (request, 'myproject2.html') 
+def fbbase(request):
+    return render (request, 'basaefb.html')  
+def fblog1(request):
+    return render (request, 'fblogincrct.html')      
+
 
  

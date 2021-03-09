@@ -27,6 +27,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+.radio_1{
+    padding: 1px;
+}
+
 @media screen and (max-width:700px){
 
     #buttn{
@@ -37,14 +41,13 @@
 
               .radio_button{
                 top: 112px;
+                
 
               }  
               .radio1{
 
                 padding: 1%;
-                margin: 1%;
                 
-                 margin: 0 auto;
-                  display: block;
+                
               }      
 }

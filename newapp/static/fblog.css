@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn_1{
+   
+    margin-top: -88px;
+    margin-left: 342px;
+    width: 90px;
+}
+
+.bg_main{
+  
+    background-color: #cfd4e7; 
+    height: 700px;
+    margin-top: -10px;;
+
+}
+
+.inner_box{
+    height: 350px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: block;
+    top: 95px;
+}
+
+.email_1{
+    margin: 0;
+    margin-top: -20px;
+}
+
+.btn_log{
+    background-color: blue;
+    color: #fff;
+    width: 70px;
+    height: 35px;
+    margin-left: 16px;
+    padding: 0px;
+}
+
+.or_tag{
+ padding-left:16px ;
+}
+
+.sign_for_fb{
+    padding-left:16px ;
+
+}
+
+.password_1{
+    margin-top: 58px;
+}
+
+@media screen and  (max-width:700px){
+    
+    .btn_1{
+   
+        margin: 0 auto;
+        display: block;
+        margin-top: 482px;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        
+    }
+
+    .inner_box{
+        margin-top: -63px;
+    }
+    .input_1{
+        border: 1px solid black;
+        border-radius: 1px;
+        margin: 0 auto;
+        display: block;
+        width: 224px;
+        
+
+    }
+
+    .btn_log{
+        margin: 0 auto;
+        display: block;
+        margin-block: 44px;
+        width: 225px;
+
+    }
+    .sign_for_fb{
+        margin: 0 auto;
+        display: block;
+        margin-block: -34px;
+        
+       
+
+    }
+    .forgotten_pss{
+        text-align: center;
+        margin-top: -42px;
+        
+    }
+    .input_1[type="password"]::placeholder {  
+                  
+        /* Firefox, Chrome, Opera */ 
+        text-align: center; 
+    } 
+
+    .input_1[type="password"]:-ms-input-placeholder { 
+                  
+        /* Internet Explorer 10-11 */ 
+        text-align: center; 
+    }
+    
+
+}
+
+
+@media (min-width:1025px) and (min-width:1281px) {
+    ::-webkit-input-placeholder {
+       /* WebKit browsers */
+        color: transparent;
+   }
