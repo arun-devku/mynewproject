@@ -77,6 +77,15 @@
     background-color: #28a745;
 }
 
+input[type=text ]:focus{
+    background-color: rgb(250, 237, 119);
+    border: 2px solid #862d59;
+}
+input[type=password ]:focus{
+    background-color: rgb(250, 237, 119);
+    border: 2px solid #862d59;
+}
+
 
 
 

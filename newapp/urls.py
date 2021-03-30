@@ -22,9 +22,13 @@ urlpatterns = [
     path('assgnmnt14/', views.assgnmnt14,name='assgnmnt14'),
     path('assgnmnt15/', views.assgnmnt15,name='assgnmnt15'),
     path('mypro/', views.mypro,name='mypro'),  
-    path('mypro2/', views.mypro2,name='mypro2'), 
+    path('mypro2/', views.mypro2,name='mypro2'),
     path('fbbase/', views.fbbase,name='fbbase'), 
-    path('fblog1/', views.fblog1,name='fblog1'),  
+    path('fblog1/', views.fblog1,name='fblog1'), 
+    path('fblog2/', views.fblog2,name='fblog2'),
+    path('fblog3/', views.fblog3,name='fblog3'),
+    path('mypro1/', views.mypro1,name='mypro1'),
+    path('new1/', views.new1,name='new1'),
     
     ]
  

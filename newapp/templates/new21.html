@@ -1,0 +1,70 @@
+{% extends 'myprojectbase.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<div id="main2" class="container-fluid col-md-8 main">
+ <div class="row">
+     <div class="col-md-4 col_1">
+
+     </div>
+        <div  class="col-md-8 col_2 main2">
+           <form id="validation">
+            <div class="form-group row">
+               <label  class="col-md-4 col-form-label">first name</label>
+                <div class="col-md-6">
+                   <input name="firstName" type="text" class="form-control" placeholder="first name">
+                </div>
+            </div>
+            <div class="form-group row">
+             <label  class="col-md-4 col-form-label">last name</label>
+                 <div class="col-md-6">
+                   <input name="lasttName" type="text"   class="form-control" placeholder="last name">
+                 </div>
+            </div>
+         
+           <div class="form-group row">
+             <label  class="col-sm-4 col-form-label">Email id</label>
+                <div class="col-sm-6">
+                  <input name="email" type="text" class="form-control" placeholder="email id">
+                </div>
+           </div>
+           <div class="form-group row">
+               <label  class="col-sm-4 col-form-label">Password</label>
+                <div class="col-sm-6">
+                 <input name="password" type="text" class="form-control" id="password" placeholder="Password">
+                </div>
+           </div>
+          <div class="form-group row">
+               <label class="col-sm-4 col-form-label">mobile number</label>
+              <div class="col-sm-6">
+                <input  name="confirmPassword" type="text" class="form-control"  placeholder="">
+              </div>
+          </div>
+      
+         
+         
+        <div class="container-fluid col-md-12">
+            <div class="col-md-8 check_box">
+                <input type="checkbox">
+                <label style="font-weight: bold;" class="text-dark" for="">I accept the terms and policy</label>
+            </div>
+      
+         <div class="col-md-8">
+             <button class="btn btn-success btn-md btn-block">signUP</button>
+         </div>
+
+        </div>
+      </form>
+         
+           
+           
+           
+        
+        
+ </div>
+ </div>
+</div>
+  {% endblock %}

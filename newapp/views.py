@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import *
 
 
 def home(request):
@@ -7,8 +8,13 @@ def home(request):
 
 def arundev(request):
     return render (request, 'facebook.html')  
+
 def firstassgnmnt(request):
-    return render (request, 'firstassgnmt.html')  
+    user=UserDetais.objects.all()
+    print(user)
+    # username='arun'
+    # age=24
+    return render (request, 'firstassgnmt.html',{'user':user})  
 def assgnmnt2(request):
     return render(request, 'assgnmnt2.html')   
 def assgnmnt3(request):
@@ -46,7 +52,16 @@ def mypro2(request):
 def fbbase(request):
     return render (request, 'basaefb.html')  
 def fblog1(request):
-    return render (request, 'fblogincrct.html')      
+    return render (request, 'fblogincrct.html')
+def fblog2(request):
+    return render (request, 'fbincrctemail.html')
+def fblog3(request):
+    return render (request, 'fbhome.html')
+def mypro1(request):
+    return render (request, 'myproject1.html') 
+def new1(request):
+    return render (request, 'new21.html')       
+                 
 
 
  

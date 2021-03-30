@@ -1,14 +1,15 @@
-{% extends 'projectbase.html' %}
+{% extends 'myprojectbase.html' %}
 
-{% load static %}
 
 
 {% block content %}
 
 
+{% load static %}
 
 
-<div class="container-fluid col-md-10 radio_button" >
+
+<div id="main" class="container-fluid col-md-10 radio_button" >
     <div class="row">
         <div class="container radio_1">
             <div class="form-check form-check-inline radio1" >
@@ -30,37 +31,39 @@
     <div  class="container-fluid col-md-12 col-12 main-content">
         <div class="row">
             
-            <div class="col-md-3" style="border: 1px solid black ;" >
+            <div id="now" class="col-md-3"  >
                 <p >from</p>
-                
-                <select style="border: none; font-size: 40px; font-weight: bold;" >
+                <div class="from">
+                  <select class="country"  >
                     
-                   <option >BANGLUR</option>
-                       <option value="1">COIMBATHUR</option>
-                           <option value="2">CALICUT</option>
-                           <option value="3">DELHI</option>
-                   </select>
+                  
+                  </select>
+                </div>
+               
+               
                 
             </div>
-            <div class="col-md-3" style="border: 1px solid black ;" >
+            <div class="col-md-3"  >
                 <p>to</p>
-                <select style="border: none; font-size: 40px; font-weight: bold;" >
+                
+                <div class="from">
+                  <select class="country"  >
                     
-                    <option >MUMBAI</option>
-                        <option value="1">COIMBATHUR</option>
-                            <option value="2">CALICUT</option>
-                            <option value="3">DELHI</option>
-                    </select>
+                  
+                  </select>
+                </div>
+                
+                
                 
             </div>
-            <div class="col-md-3"  style="border: 1px solid black ;">
+            <div class="col-md-3" >
                 <p>Traveldate</p>
-                <input type="date">
+                <input class="custom-select" type="date" style="height: calc(6.25rem + 2px);">
             </div>
-            <div class="col-md-3"  style="border: 1px solid black ;">
+            <div class="col-md-3" >
                 <p>class</p>
                 
-                <select style="border: none; font-size: 12px; font-weight: bold;" >
+                <select class="custom-select" style="height: calc(6.25rem + 2px);" >
                     
                     <option >first AC</option>
                         <option value="1">second AC</option>
@@ -78,8 +81,91 @@
 
 </div>
  <div class="container-fluid col-md-4" id="buttn">
-      <button class="btn-success btn-block" style="margin-top: 190px;">SEARCH</button>
+      <button class="btn-block" style="margin-top: 190px; background-color: brown; border:1px solid #FFF;color: #FFF;cursor: pointer;">SEARCH</button>
  </div>
+
+
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+ <script type="text/javascript">
+
+    $(document).ready(function(){
+      $('label,p').hover(function(){
+        $(this).css('font-weight','bold');},
+        function(){
+        $(this).css('font-weight','normal');
+      });
+    }); 
+    
+    </script>
+
+ <script type="text/javascript">
+
+ $(document).ready(function(){
+  $('button').hover(function(){
+    $(this).css('font-weight','bold');},
+    function(){
+    $(this).css('font-weight','normal');
+  });
+ }); 
+
+</script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+      $('button').hover(function(){
+        $(this).css('border','2px solid white');},
+        function(){
+        $(this).css('border','none');
+      });
+    }); 
+    
+    </script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#main').hover(function(){
+          $(this).css('border','2px solid brown');},
+          function(){
+          $(this).css('border','none');
+        });
+      }); 
+      
+      </script>
+       <script type="text/javascript">
+
+        $(document).ready(function(){
+          $('.col-md-3').hover(function(){
+            $(this).css('background-color',' brown');
+            $(this).css('color','white');
+          },
+            function(){
+            $(this).css('background-color','white');
+            $(this).css('color','black');
+          });
+        }); 
+        
+        </script>
+ 
+ 
+ 
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var country = ["KOZHIKODE", "MUMBAI", "CHENNAI", "BANGLURE", "DELHI", "AHAMMADABAD", "GOA", "KOLKATA"];
+				$(".country").select2({
+				  data: country
+				});
+			});
+		</script>
+  
+</script>
 
 {% endblock %}
 

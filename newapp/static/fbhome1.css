@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logoImg{
+    width: 40px;
+    width: 40px;
+}
+.searchBox{
+    margin-right: 0;
+}
+.mr-1{
+    margin-left: 216px;
+}
+.watchIcon{
+    margin-left: 50px;
+}
+.marketPlace{
+    margin-left: 50px;
+}
+.groups{
+    margin-left: 50px;
+}
+.gaming{
+    margin-left: 50px;
+}
+
+.messgr{
+
+    margin-right: 169px;
+}
+a i:hover{
+    background-color: transparent;
+    /* background-color: brown; */
+    padding: 8px;
+}
+
+.leftSide{
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+}
+.midSide{
+    background-color: black;
+    color: #fff;
+}
+.righT_side{
+    background-color:black;
+    color: #fff;
+}
+.fri_dz{
+    margin-top: 20px;
+    margin-left: 4px;
+}
+
+.frD{
+    margin-left: 5px;
+}
+.gr_ps{
+    margin-top: 20px;
+    margin-left:  -52px;
+}
+
+.g_rp{
+    margin-left: 5px; 
+}
+.mar_place{
+    margin-left:5px ;
+}
+.mar_place1{
+    margin-top: 20px;
+    margin-left:  -52px; 
+}
+.watCH{
+    margin-left: 5px;
+}
+.watCH1{
+    margin-top: 20px;
+}
+.evNt{
+    margin-left: 5px;
+}
+.evNt1{
+    margin-top: 20px;
+}
+
+.miNd{
+    margin-top: 30px;
+    background-color: rgb(56 56 60);
+    margin-left: -50px;
+}
+.mindSearch{
+    width: 400px;
+}
+/* .hr1{
+    border-top: 3px solid #fff;
+    margin-top: 8px;
+    
+} */
+ .hrTag{
+    width: 510px;
+    border-top: 3px solid #fff;
+    margin-top: 34px;
+    margin-left: -25px;
+ }
+
+.mind1{
+    margin-top: 20px;
+}
+.liveV1{
+    margin-left: 5px; 
+}
+
+.photo1{
+    margin-left: 12px;
+}
+.photo{
+    margin-left: 20px;
+}
+
+.feeling1{
+    margin-left: 10px;
+}
+.requests{
+
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+
+.buTTon{
+    margin-top: 13px;
+    margin-left: 22px;
+}
+.btn_delete{
+    margin-left: 20px;
+}
+
+.btn_confirm{
+    margin-left: 60px;
+}
+
+.frdRqust{
+    margin-top: 50px;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .miNd{
+        margin-top: 30px;
+        background-color: rgb(56 56 60);
+        margin-left: auto;
+}
+
+.midIcon a i{
+    font-size: 12px;
+}
+
+.liveV1{
+    margin-left: 5px; 
+}
+
+.photo1{
+    margin-left: 5px;
+}
+.photo{
+    margin-left: 5px;
+}
+
+.feeling1{
+    margin-left: 5px;
+}
+.feeling{
+    margin-left: 2px;
+}
+.messgr{
+
+    margin-right: 7px;
+}
+}

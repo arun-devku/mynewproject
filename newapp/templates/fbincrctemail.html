@@ -1,0 +1,59 @@
+{% extends 'basefb.html' %}
+
+
+
+{% block content %}
+{% load static %}
+
+<!-- bgcolor -->
+<div class="container-fluid col-md-12 col-12 col-sm-12 bg_main">
+    <!-- signUP_button -->
+   <div class="col-md-2 col-12 col-sm-12">
+       <div class="btn btn-success btn_1">Sign Up</div>
+   </div>
+   <!-- input_box -->
+  <div class="container-fluid col-md-7 col-sm-10 col-12 inner_box">
+         <h5 style="font-weight: bold;padding: 8px;">Facebook Login</h5>
+          <hr>
+         <div class="row">
+                <div class="container-fluid col-md-6 col-sm-6 d-none d-sm-block">
+                       <div class="row">
+                           <!-- email or password label -->
+                           <div class="container-fluid col-md-4 col-sm-6">
+                                <p class="emp">Email or phone number</p> 
+                                 <p class="emp">password</p> 
+
+                            </div>
+                            <!-- input column -->
+                            <div class="container-fluid col-md-8 col-sm-6">
+                                  <input type="text"> 
+                                             
+                                    <input class="pass" type="password">
+                                    <div class="container-fluid col-md-12 col-sm-12">
+                                        <input type="checkbox">
+                                        <label style="color: black;" for="">keep me logged in</label>
+                                    </div>
+                                      <!-- button and signupLink -->
+                                      <div class="container-fluid col-md-12 col-sm-12 ">
+                                        <div class="row">
+                                         <button class="btn btn_log ">Log in</button>
+                                         
+                                            <p class="or_tag d-none d-md-block ">or</p>
+                                            <a href="" class="sign_for_fb d-none d-md-block ">sign up for facebook</a>
+                                        </div>  
+                                           
+                                      </div>
+                                      <div class="col-md-12 col-sm-12 col-12 forgotten_pss">
+                                        <a href="">forgotten password</a>
+                                    </div>
+                                   </div>
+                            </div>
+                       </div>
+               </div> 
+         </div>  
+  </div> 
+</div>     
+
+
+
+{% endblock %}

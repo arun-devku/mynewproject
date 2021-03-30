@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'fbhome1.css' %}">
+   
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand"><img class="logoImg" src="{% static 'facebook-512.webp' %}" alt=""></a>
+        <form class="form-inline mr-auto searchBox d-none d-sm-block">
+          <input class="form-control mx-0 " type="search" placeholder="Search Facebook " aria-label="Search">
+          <a href="#"><i style="color: #fff;font-size: 30px" class="fas fa-home mr-1"></i></a>
+          <a href="#"><i style="color: #fff;;font-size: 30px" class="fab fa-youtube watchIcon"></i></a>
+         <a href="#"><i style="color:  #fff;font-size: 30px" class="fas fa-gift marketPlace"></i></a> 
+         <a href="#"><i  style="color:  #fff;font-size: 30px" class="fas fa-users groups"></i></a> 
+         <a href="#"><i style="color:  #fff;font-size: 30px" class="far fa-object-group gaming"></i></a> 
+         
+        </form>
+        <!-- account -->
+        <a class="d-none d-sm-block" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt="">Arun</a>
+        
+        <a href="#"><i style="color: #fff;font-size: 30px" class="fab fa-facebook-messenger messgr"></i></a> 
+        <a class="d-none d-sm-block" href="#"><i style="color: #fff;font-size: 30px" class="fas fa-bell"></i></a>
+        
+      </nav>
+        <!-- main_content -->
+      <div class="container-fluid col-md-12">
+        <div class="row">
+          <!-- leftside -->
+          <div class="container-fluid col-md-3 leftSide d-none d-sm-block">
+             <a class="text-white" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt="">ArunDev</a>
+             <!-- friends -->
+              <div class="container-fluid col-md-12 fri_dz">
+                 
+                     
+                        <div class="row">
+                          <a class="text-white" href="#"><i style="color: #fff;font-size: 30px;" class="fas fa-user-friends"></i></a>
+                          <p class="frD">friends</p>
+                        </div>
+                      
+                     
+               
+              </div>
+             <!-- friend end -->
+
+               <!-- groups -->
+                    <div class="container-fluid col-md-12 gr_ps">
+                      <div class="row">
+                        <a href="#"><i  style="color:  #fff;font-size: 30px" class="fas fa-users groups"></i></a> 
+                         <p class="g_rp">group</p>
+                      </div>
+                    </div>
+
+               <!-- group end -->
+
+
+               <!-- marketPlace -->
+                    <div class="container-fluid col-md-12 mar_place1">
+                      <div class="row">
+                        <a href="#"><i style="color:  #fff;font-size: 30px" class="fas fa-gift marketPlace"></i></a>
+                        <p class="mar_place">Marketplace</p>
+                      </div>
+                    </div>
+               <!-- marketPlace end -->
+
+               <!-- watch -->
+               <div class="container-fluid col-md-12 watCH1">
+                <div class="row">
+                  <a href="#"><i style="color: #fff;;font-size: 30px" class="fab fa-youtube"></i></a>
+                  <p class="watCH">Watch</p>
+                </div>
+              </div>
+               <!-- watch end -->
+
+               <!-- events -->
+               <div class="container-fluid col-md-12 evNt1">
+                <div class="row">
+                  <a href="#"><i  style="color: #fff;;font-size: 30px" class="fas fa-calendar-alt"></i></a>
+                  <p class=" evNt">Event</p>
+                </div>
+              </div>
+
+               <!-- events end -->
+          </div>
+                             <!-- leftSideEnd -->
+             
+             
+             
+                <!-- midSide -->
+             
+           <div class="container-fluid col-md-6 col-12 col-sm-8 midSide">
+                 <!-- post whats on your mind -->
+
+                 <div class="container-fluid col-md-12 miNd">
+                    <div class="row">
+
+
+                       <div class="container-fluid col-md-8 mind1">
+                          <div class="row">
+                              <a class="text-white" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt=""></a>
+                        
+                              <input class="form-control mx-0 mindSearch" type="search" placeholder="whats on your mind " aria-label="Search">
+                                 
+
+
+                                  <!-- insideHRtag -->
+                                   <div class="container-fluid col-md-12 col-12 ">
+                                         <hr class="hrTag">
+                                     </div>
+                           <!-- insideHRtag End -->
+
+                           <div class="container-fluid col-md-12 col-12 midIcon">
+                             <div class="row">
+                                <!-- live video icon -->
+                                <a href=""><i  style="color:red;;font-size: 30px" class="fas fa-video"></i></a>
+                                <p class="liveV1">Live Video</p>
+
+                                <!-- live video icon end -->
+
+
+                                <!-- photos -->
+                                <a class="photo" href=""><i style="color:green;;font-size: 30px" class="fas fa-photo-video"></i></a>
+                                <p class="photo1">Photos/Videos</p>
+
+                                <!-- photos end -->
+
+
+                                <!-- feeling activities -->
+                                 <a class="feeling ml-auto" href=""><i style="color:rgb(228, 208, 26);;font-size: 30px" class="fas fa-smile-beam"></i></a>
+                                 <p class="feeling1">feeling/activity</p>
+                                <!-- feeling activitied end -->
+                             </div>
+
+                           </div>
+                           </div>
+                       </div>
+                      
+                       
+
+
+
+
+                    </div>
+
+                 </div>
+
+                 <!-- post whats on your mind end -->
+            
+            </div>
+                        
+            
+            
+            
+            
+               <!-- rigtSide -->
+            <div class="container-fluid col-md-3 righT_side d-none d-sm-block">        
+              
+            
+               <div class="container-fluid col-md-12 frdRqust">
+                 <div class="row">
+                   <div class="col-md-12">
+                     <p style="font-size: 20px;">Fried Requests</p>
+                   </div>
+                   <div class="col-md-12">
+                    <hr style="border-top: 1px solid #fff;">
+                   </div>
+                   
+
+                  <a class="text-white requests" style="margin-right: 18px;" href=""><img style="width: 60px;height: 60px;border-radius: 50%;margin-right: 10px;" src="{% static '25.jpeg' %}" alt="">mohan kumar</a>
+
+                  <div class="col-md-12 buTTon">
+                    <div class="row">
+                      <button class="btn btn-primary btn_confirm">confirm</button>
+                      <button class="btn btn-danger btn_delete">delete</button>
+
+                    </div>
+                    
+                  </div>
+                 
+                 </div>
+
+
+               </div>
+            
+            </div>
+        </div>
+
+       
+
+
+      </div>
+    
+</body>
+</html>

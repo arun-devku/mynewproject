@@ -77,8 +77,17 @@ WSGI_APPLICATION = 'arundev.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nw_db',
+        'USER':'root',
+        'PASSWORD':'',
+    },
+
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fb_db',
+        'USER':'root',
+        'PASSWORD':'',
     }
 }
 

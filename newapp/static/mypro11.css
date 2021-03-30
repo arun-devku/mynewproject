@@ -17,6 +17,7 @@
 .main-content{
 
     padding: 12px;
+    height: 250px;
 }
 .from{
     border: 0;
@@ -30,6 +31,26 @@
 .radio_1{
     padding: 1px;
 }
+
+
+.main_btn{
+    background-color: #080432;
+    color: #fff;
+    font-size: 20px;
+}
+
+select{
+    width: 90%;
+    height: 60%;
+    top: 12px;
+}
+.from{
+    margin-top: 8%;
+    width: 100%;
+
+}
+
+
 
 @media screen and (max-width:700px){
 

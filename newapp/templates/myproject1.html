@@ -1,0 +1,184 @@
+{% extends 'myprojectbase.html' %}
+
+{% block content %}
+
+{% load static %}
+<style>
+  
+  .error{
+    color: red;
+    
+  }
+</style>
+
+<div id="main2" class="container-fluid col-md-8 main">
+ <div class="row">
+     <div class="col-md-4 col_1">
+
+     </div>
+        <div  class="col-md-8 col_2 main2">
+           <form id="validation">
+            <div class="form-group row">
+               <label  class="col-md-4 col-form-label">first name</label>
+                <div class="col-md-6">
+                   <input name="firstName" type="text" class="form-control" placeholder="first name">
+                </div>
+            </div>
+            <div class="form-group row">
+             <label  class="col-md-4 col-form-label">last name</label>
+                 <div class="col-md-6">
+                   <input name="lasttName" type="text"   class="form-control" placeholder="last name">
+                 </div>
+            </div>
+         
+           <div class="form-group row">
+             <label  class="col-sm-4 col-form-label">Email id</label>
+                <div class="col-sm-6">
+                  <input name="email" type="text" class="form-control" placeholder="email id">
+                </div>
+           </div>
+           <div class="form-group row">
+               <label  class="col-sm-4 col-form-label">Password</label>
+                <div class="col-sm-6">
+                 <input name="password" type="text" class="form-control" id="password" placeholder="Password">
+                </div>
+           </div>
+          <div class="form-group row">
+               <label class="col-sm-4 col-form-label">confirm-Password</label>
+              <div class="col-sm-6">
+                <input  name="confirmPassword" type="text" class="form-control"  placeholder="confirm-Password">
+              </div>
+          </div>
+      
+         
+         
+        <div class="container-fluid col-md-12">
+            <div class="col-md-8 check_box">
+                <input type="checkbox">
+                <label style="font-weight: bold;" class="text-dark" for="">I accept the terms and policy</label>
+            </div>
+      
+         <div class="col-md-8">
+             <button class="btn btn-success btn-md btn-block">signUP</button>
+         </div>
+
+        </div>
+      </form>
+         
+           
+           
+           
+        
+        
+ </div>
+ </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js" type="text/javascript"></script>
+ 
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('label').hover(function(){
+    $(this).css('font-weight','bold');},
+    function(){
+    $(this).css('font-weight','normal');
+  });
+}); 
+
+</script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('#main2').hover(function(){
+      $(this).css('border','1px solid black');},
+      function(){
+      $(this).css('border','none');
+    });
+  }); 
+  
+  </script>
+
+
+<script type="text/javascript">
+
+
+// Query.validator.addMethod("noSpace", function(value, element) { 
+//   return value.indexOf(" ") < 0 && value != ""; 
+// }, "No space please and don't leave it empty");
+
+// jQuery.validator.addMethod("lettersonly", function(value, element) {
+//   return this.optional(element) || /^[a-z]+$/i.test(value);
+// }, "Letters only please"); 
+
+
+$(document).ready(function(){
+  jQuery.validator.addMethod("noSpace",function(value,element){ 
+  return value.indexOf(" ") < 0 && value != ""; 
+});
+
+  $("#validation").validate({
+   rules:{
+     firstName:{
+      required: true,
+      noSpace: true,
+      
+      minlength:6
+
+    },
+    lasttName:{
+      required: true,
+      noSpace: true,
+      minlength:6
+    },
+    email:{
+      required: true,
+      noSpace: true,
+      email:true
+    },
+     password:{
+       required: true,
+       noSpace: true,
+       minlength: 6
+     },
+     confirmPassword:{
+       required: true,
+       equalTo :"#password"
+     }
+    
+   },
+   messages: {
+      firstName:{
+        required:"please enter your first name",
+        lettersonly:"please enter letter only",
+        noSpace:"No space please and don't leave it empty",
+        minlength: "please enter minimum 6 character"
+    },
+      lasttName:{
+        required:"please enter your last name",
+        noSpace:"No space please and don't leave it empty",
+        minlength: "please enter minimum 6 character"
+   },
+      email:{
+        required:"please enter your email id",
+        noSpace:"No space please and don't leave it empty",
+        email:"please enter valid email id"
+      },
+      password:{
+        required:"please enter your password",
+        noSpace:"No space please and don't leave it empty",
+        minlength:"please enter minimum 6 characters"
+      },
+      confirmPassword:{
+        required:"please re-enter your password",
+        equalTo:"Please enter the same password as above"
+      }
+  }
+ });
+});
+
+</script>
+
+{% endblock %}

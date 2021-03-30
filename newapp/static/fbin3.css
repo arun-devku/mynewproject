@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p.emp{
+    color: rgb(38, 89, 231);
+    margin-left: -14px;
+}
+
+input:focus{
+  background-color:  rgb(250, 237, 119);;
+}
+
+.pass{
+    margin-top: 10px;
+}
+.btn_log{
+    background-color: blue;
+    color: #fff;
+    width: 70px;
+    height: 35px;
+    margin-left: 16px;
+    padding: 0px;
+}
+
+.or_tag{
+ padding-left:16px ;
+}
+
+.sign_for_fb{
+    padding-left:16px ;
+
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+
+.main2{
+
+    padding:36px;
+}
+
+
+ .btn_log{
+    padding: 13px 131px;
+    
+
+ }
+
+.btn_sign{
+
+
+    padding: 13px 131px;
+}
+
+.check_box{
+ text-align: center;
+
+}
+
+
+
+@media screen and (max-width:678px){
+
+    body{
+        background-size: 300%;
+        background: no-repeat;
+    }
+}
