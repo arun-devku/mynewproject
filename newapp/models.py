@@ -16,3 +16,16 @@ class UserDetailsfb(models.Model):
     lastname=models.CharField(max_length=250)
     emailid=models.CharField(max_length=250)
     phonenumber=models.IntegerField()
+
+class Logindetails(models.Model):
+    username=models.CharField(max_length=250)
+    password=models.CharField(max_length=250) 
+
+class Details(models.Model):
+    username=models.CharField(max_length=250)
+    password=models.CharField(max_length=250)
+    firstname=models.CharField(max_length=250)
+    lastname=models.CharField(max_length=250)
+    emailId=models.CharField(max_length=250)
+    phonenumber=models.IntegerField()
+    user=models.ForeignKey(Logindetails,on_delete=models.CASCADE)

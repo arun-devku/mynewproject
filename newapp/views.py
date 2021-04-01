@@ -60,6 +60,8 @@ def fblog3(request):
 def mypro1(request):
     return render (request, 'myproject1.html') 
 def new1(request):
+    if request.method=="POST":
+        print("inside post")
     return render (request, 'new21.html')       
                  
 
