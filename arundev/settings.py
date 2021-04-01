@@ -83,12 +83,7 @@ DATABASES = {
         'PASSWORD':'',
     },
 
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fb_db',
-        'USER':'root',
-        'PASSWORD':'',
-    }
+   
 }
 
 
