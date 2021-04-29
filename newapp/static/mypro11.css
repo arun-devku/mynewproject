@@ -49,6 +49,12 @@ select{
     width: 100%;
 
 }
+label{
+    color: black;
+}
+#pnr{
+    padding: 12px;
+}
 
 
 

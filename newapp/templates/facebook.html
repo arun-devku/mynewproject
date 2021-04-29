@@ -12,15 +12,19 @@
         <div class="wrapper-left">
             <img src="{% static 'fb1.svg' %}" alt="error">
             <p class="p">FacebookFacebook helps you connect and share with the people in your life</p>
+            
 
         </div>
         <div class="wrapper-right">
-            <form class="form" action="">
-                <input class="email" type="text" placeholder="email id or phone number"> <br>
-                <input class="password" type="text" placeholder="password">
-                <button class="button">log in</button>
+            <form class="form" action="arundev" method="POST">
+                {% csrf_token %}
+                <input class="email" name="email" type="text" placeholder="email id or phone number"> <br>
+                <input class="password" name="password" type="text" placeholder="password">
+                <button type="submit" class="button">log in</button> <br>
+                <label style="color: red;" for="">{{msg}}</label><br>
                 <a id="link" href="#">forgotten password?</a> <br>
                 <button class="button2">create new account</button>
+               
             </form>
         </div>
     </div>

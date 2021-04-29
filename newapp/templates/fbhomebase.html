@@ -1,0 +1,328 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'fbhome1.css' %}">
+   
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark justify-content-between">
+        <a class="navbar-brand"><img class="logoImg" src="{% static 'facebook-512.webp' %}" alt=""></a>
+        <form class="form-inline mr-auto searchBox d-none d-sm-block">
+          <input class="form-control mx-0 " type="search" placeholder="Search Facebook " aria-label="Search">
+          <a href="/newapp/fblog3"><i style="color: #fff;font-size: 30px" class="fas fa-home mr-1"></i></a>
+          <a href="#"><i style="color: #fff;;font-size: 30px" class="fab fa-youtube watchIcon"></i></a>
+         <a href="#"><i style="color:  #fff;font-size: 30px" class="fas fa-gift marketPlace"></i></a> 
+         <a href="#"><i  style="color:  #fff;font-size: 30px" class="fas fa-users groups"></i></a> 
+         <a href="/newapp/fbprofile"><i style="color:  #fff;font-size: 30px" class="far fa-object-group gaming"></i></a> 
+         
+        </form>
+        <!-- account -->
+        <a class="d-none d-sm-block" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt="">Arun</a>
+        
+        <a href="#"><i style="color: #fff;font-size: 30px" class="fab fa-facebook-messenger messgr"></i></a> 
+        <a class="d-none d-sm-block" href="#"><i style="color: #fff;font-size: 30px" class="fas fa-bell"></i></a>
+        
+      </nav>
+        <!-- main_content -->
+      <div class="container-fluid col-md-12">
+        <div class="row">
+          <!-- leftside -->
+          <div class="container-fluid col-md-3 leftSide d-none d-sm-block">
+             <a class="text-white" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt="">ArunDev</a>
+             <!-- friends -->
+              <div class="container-fluid col-md-12 fri_dz">
+                 
+                     
+                        <div class="row">
+                          <a class="text-white" href="#"><i style="color: #fff;font-size: 30px;" class="fas fa-user-friends"></i></a>
+                          <p class="frD">friends</p>
+                        </div>
+                      
+                     
+               
+              </div>
+             <!-- friend end -->
+
+               <!-- groups -->
+                    <div class="container-fluid col-md-12 gr_ps">
+                      <div class="row">
+                        <a href="#"><i  style="color:  #fff;font-size: 30px" class="fas fa-users groups"></i></a> 
+                         <p class="g_rp">group</p>
+                      </div>
+                    </div>
+
+               <!-- group end -->
+
+
+               <!-- marketPlace -->
+                    <div class="container-fluid col-md-12 mar_place1">
+                      <div class="row">
+                        <a href="#"><i style="color:  #fff;font-size: 30px" class="fas fa-gift marketPlace"></i></a>
+                        <p class="mar_place">Marketplace</p>
+                      </div>
+                    </div>
+               <!-- marketPlace end -->
+
+               <!-- watch -->
+               <div class="container-fluid col-md-12 watCH1">
+                <div class="row">
+                  <a href="#"><i style="color: #fff;;font-size: 30px" class="fab fa-youtube"></i></a>
+                  <p class="watCH">Watch</p>
+                </div>
+              </div>
+               <!-- watch end -->
+
+               <!-- events -->
+               <div class="container-fluid col-md-12 evNt1">
+                <div class="row">
+                  <a href="#"><i  style="color: #fff;;font-size: 30px" class="fas fa-calendar-alt"></i></a>
+                  <p class=" evNt">Event</p>
+                </div>
+              </div>
+
+               <!-- events end -->
+          </div>
+                             <!-- leftSideEnd -->
+             
+             
+             
+                <!-- midSide -->
+             
+           <div class="container-fluid col-md-6 col-12 col-sm-8 midSide">
+                 <!-- post whats on your mind -->
+
+                 <div class="container-fluid col-md-12 miNd">
+                    <div class="row">
+                              <div class="col-md-12">
+                                <h2 class="text-center">Profile Details</h2>
+                              </div>
+                             
+                        
+                                <div class="col-md-5 ">
+                                 <label for="">Firstname :</label>
+                                </div>
+                                <div class="col-md-5">
+                                    <output>{{userdetails.firstname}}</output>
+                                </div>
+                                <!-- <div class="col-md-2">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Edit</button>
+                                </div> -->
+                                 
+                                
+                             
+                             <br>
+                             <div class="lastname col-md-5 mt-3">
+                                 <label for="">Lastname :</label>
+                                </div>
+                                <div class="col-md-5 mt-3">
+                                    <output>{{userdetails.lastname}} </output>
+                                </div>
+                                <!-- <div class="col-md-2 mt-3">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModallastname" data-whatever="@mdo" >Edit</button>
+                                </div> -->
+                             
+                            
+                             
+                             <br>
+                             <div class="col-md-5 mt-3">
+                              <img width="25%" src="{{profile.url}}" alt="">
+                             </div>
+                             
+                             <div class="mob col-md-5 mt-3">
+                                 <label for="">Mobile Number :</label>
+                                </div>
+                                <div class="col-md-5 mt-3">
+                                    <output>{{userdetails.phonenumber}}</output>
+                                </div>
+                             <div class="col-md-2 mt-3">
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalcontact" data-whatever="@mdo">Edit</button>
+                                    
+                             </div>
+                             
+                            
+                             
+                              <br>
+                         
+
+                         
+
+
+                    </div>
+
+                 </div>
+
+                 <!-- post whats on your mind end -->
+            
+            </div>
+                        
+            
+            
+            
+            
+               <!-- rigtSide -->
+            <div class="container-fluid col-md-3 righT_side d-none d-sm-block">        
+              
+            
+               <div class="container-fluid col-md-12 frdRqust">
+                 <div class="row">
+                   <div class="col-md-12">
+                     <p style="font-size: 20px;">Fried Requests</p>
+                   </div>
+                   <div class="col-md-12">
+                    <hr style="border-top: 1px solid #fff;">
+                   </div>
+                   
+
+                  <a class="text-white requests" style="margin-right: 18px;" href=""><img style="width: 60px;height: 60px;border-radius: 50%;margin-right: 10px;" src="{% static '25.jpeg' %}" alt="">mohan kumar</a>
+
+                  <div class="col-md-12 buTTon">
+                    <div class="row">
+                      <button class="btn btn-primary btn_confirm">confirm</button>
+                      <button class="btn btn-danger btn_delete">delete</button>
+
+                    </div>
+                    
+                  </div>
+                 
+                 </div>
+
+
+               </div>
+            
+            </div>
+
+
+
+
+           
+<!-- edit firstname -->
+<!-- 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h4 class="text-white">Change your Firstname</h4>
+        
+        <button style="outline: none;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">First Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+edit firstnameend
+
+ edit lastname
+
+  <! <div class="modal fade" id="exampleModallastname" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h4 class="text-white">Change your Last Name</h4>
+        
+        <button style="outline: none;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">Last Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Ok</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- edit lastnameend --> 
+
+ 
+<!-- edit contactnumber -->
+
+<div class="modal fade" id="exampleModalcontact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h4 class="text-white">Change your Contact Number</h4>
+        
+        <button style="outline: none;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="text-white" aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="/newapp/fbprofile" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">First Name</label>
+            <input type="text" class="form-control" id="recipient-name" value="{{userdetails.firstname}}"placeholder="{{userdetails.firstname}}"name="first_name" >
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">Last Name</label>
+            <input type="text" class="form-control" id="recipient-name" value="{{userdetails.lastname}}"placeholder="{{userdetails.lastname}}"name="last_name" >
+          </div>
+
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">Contact Number</label>
+            <input type="text" class="form-control" id="recipient-name" value="{{userdetails.phonenumber}}"placeholder="{{userdetails.phonenumber}}"name="contact_number">
+
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-white">profile picture</label>
+            <input  type="file" name="profile" class="form-control" >
+
+          </div>
+          <button  type="submit" class="btn btn-primary">Ok</button>
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- edit contactnumber end -->
+        </div>
+
+       
+
+
+      </div>
+      {% block content %}
+                 {% endblock %}
+</body>
+</html>

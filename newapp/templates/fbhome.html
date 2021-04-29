@@ -23,11 +23,11 @@
         <a class="navbar-brand"><img class="logoImg" src="{% static 'facebook-512.webp' %}" alt=""></a>
         <form class="form-inline mr-auto searchBox d-none d-sm-block">
           <input class="form-control mx-0 " type="search" placeholder="Search Facebook " aria-label="Search">
-          <a href="#"><i style="color: #fff;font-size: 30px" class="fas fa-home mr-1"></i></a>
+          <a href="/newapp/fblog3"><i style="color: #fff;font-size: 30px" class="fas fa-home mr-1"></i></a>
           <a href="#"><i style="color: #fff;;font-size: 30px" class="fab fa-youtube watchIcon"></i></a>
          <a href="#"><i style="color:  #fff;font-size: 30px" class="fas fa-gift marketPlace"></i></a> 
          <a href="#"><i  style="color:  #fff;font-size: 30px" class="fas fa-users groups"></i></a> 
-         <a href="#"><i style="color:  #fff;font-size: 30px" class="far fa-object-group gaming"></i></a> 
+         <a href="/newapp/fbprofile"><i style="color:  #fff;font-size: 30px" class="far fa-object-group gaming"></i></a> 
          
         </form>
         <!-- account -->
@@ -113,7 +113,7 @@
                           <div class="row">
                               <a class="text-white" style="margin-right: 18px;" href=""><img style="width: 40px;height: 40px;border-radius: 50%;margin-right: 10px;" src="{% static '123.jpg' %}" alt=""></a>
                         
-                              <input class="form-control mx-0 mindSearch" type="search" placeholder="whats on your mind " aria-label="Search">
+                              <input class="form-control mx-0 mindSearch" type="search" placeholder="whats on your mind " aria-label="Search" data-toggle="modal" data-target="#exampleModaltext" data-whatever="@mdo">
                                  
 
 
@@ -197,12 +197,47 @@
                </div>
             
             </div>
+
+
+            <div class="modal fade " id="exampleModaltext" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog bg-dark" role="document">
+                <div class="modal-content bg-dark">
+                  <div class="modal-header">
+                    <h4 class="text-white">What's on your mind</h4>
+                    
+                    <button style="outline: none;" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span style="border: none;" class="text-white" aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                       
+                        <input type="text" class="form-control" id="recipient-name"rows="3">
+                      </div>
+                     
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <div class="col-md-8">
+                      <button type="button" class="btn btn-primary btn-block">post</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
         </div>
 
        
 
 
       </div>
-    
+     
 </body>
 </html>

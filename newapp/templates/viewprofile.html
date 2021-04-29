@@ -1,0 +1,84 @@
+{% extends 'fbhomebase.html' %}
+
+
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'fbprofile.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <label for="">profile details</label>
+    <div class="main col-md-6 mx-auto my-auto" >
+       <div class="details">
+           <div class="firstname">
+            <label for="">Firstname :</label>
+        
+            <output>{{userdetails.firstname}}</output>
+            <button class="btn btn-primary">Edit</button>
+           </div>
+        
+        <br>
+        <div class="lastname">
+            <label for="">Lastname :</label>
+        <output>{{userdetails.lastname}} </output>
+        <button >Edit</button>
+        </div>
+        
+        <br>
+        <div class="mob">
+            <label for="">Mobile Number :</label>
+        <output>{{userdetails.phonenumber}}</output>
+        <button >Edit</button>
+        </div>
+        
+         <br>
+    </div> 
+       
+ </div>
+     <!-- rigtSide -->
+     <div class="container-fluid col-md-3 righT_side d-none d-sm-block">        
+              
+            
+        <div class="container-fluid col-md-12 frdRqust">
+          <div class="row">
+            <div class="col-md-12">
+              <p style="font-size: 20px;">Fried Requests</p>
+            </div>
+            <div class="col-md-12">
+             <hr style="border-top: 1px solid #fff;">
+            </div>
+            
+
+           <a class="text-white requests" style="margin-right: 18px;" href=""><img style="width: 60px;height: 60px;border-radius: 50%;margin-right: 10px;" src="{% static '25.jpeg' %}" alt="">mohan kumar</a>
+
+           <div class="col-md-12 buTTon">
+             <div class="row">
+               <button class="btn btn-primary btn_confirm">confirm</button>
+               <button class="btn btn-danger btn_delete">delete</button>
+
+             </div>
+             
+           </div>
+          
+          </div>
+
+
+        </div>
+     
+     </div>
+ {% endblock %}
+</body>
+</html>

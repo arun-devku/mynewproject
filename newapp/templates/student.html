@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="new2" method="POST">
+        {% csrf_token %}
+        <label for="">firstname</label>
+        <input name="firstname" type="text">
+        <label for="">lastname</label>
+        <input name="lastname" type="text">
+        <label for="">contactnumber</label>
+        <input name="contactnumber" type="number">
+        <label for="">dateof birth</label>
+        <input name="dateofbirth" type="date">
+        <button>submit</button>
+    </form>
+  
+</body>
+</html>
