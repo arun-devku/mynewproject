@@ -36,3 +36,8 @@ class Student(models.Model):
 class propic(models.Model):
     propicture=models.FileField(upload_to='profile/')
     user=models.ForeignKey(Logindetails,on_delete=models.CASCADE)
+
+
+
+class Images(models.Model):
+    picture=models.FileField(upload_to='images/')

@@ -18,13 +18,13 @@ urlpatterns = [
     path('assgnmnt10', views.assgnmnt10,name='assgnmnt10'),
     path('assgnmnt11', views.assgnmnt11,name='assgnmnt11'),
     path('assgnmnt12', views.assgnmnt12,name='assgnmnt12'),
-    path('assgnmnt13', views.assgnmnt13,name='assgnmnt13'), 
+    path('assgnmnt13', views.assgnmnt13,name='assgnmnt13'),
     path('assgnmnt14', views.assgnmnt14,name='assgnmnt14'),
     path('assgnmnt15', views.assgnmnt15,name='assgnmnt15'),
-    path('mypro', views.mypro,name='mypro'),  
+    path('mypro', views.mypro,name='mypro'),
     path('mypro2', views.mypro2,name='mypro2'),
-    path('fbbase', views.fbbase,name='fbbase'), 
-    path('fblog1', views.fblog1,name='fblog1'), 
+    path('fbbase', views.fbbase,name='fbbase'),
+    path('fblog1', views.fblog1,name='fblog1'),
     path('fblog2', views.fblog2,name='fblog2'),
     path('fblog3', views.fblog3,name='fblog3'),
     path('mypro1', views.mypro1,name='mypro1'),
@@ -33,8 +33,12 @@ urlpatterns = [
     path('fbprofile', views.fbprofile,name='fbprofile'),
     path('json', views.json,name='json'),
     path('checkusername', views.checkusername,name='checkusername'),
-    
+    path('api', views.api,name='api'),
+    path('rr', views.rr,name='rr'),
+    path('images', views.images,name='images'),
+    path('apipost', views.apipost,name='apipost'),
+    path('apidelete', views.apidelete,name='apidelete'), 
+    path('dashboard', views.dashboard,name='dashboard' ),
+    path('registration', views.registration,name='registration' ),
 
-    
-    ]
- 
+]
